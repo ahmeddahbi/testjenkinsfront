@@ -19,8 +19,10 @@ export class FileDemoComponent {
         this.messageService.add({ severity: 'info', summary: 'Success', detail: 'File Uploaded' });
     }
 
-    onBasicUpload() {
+    onBasicUpload(event: any) {
+      
         this.messageService.add({ severity: 'info', summary: 'Success', detail: 'File Uploaded with Basic Mode' });
     }
-
+    lele(event:any){
+        console.log('<========>'+event)    }
 }
